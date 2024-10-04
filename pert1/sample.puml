@@ -1,0 +1,18 @@
+@startuml Pert 1
+title Rumus Luas Segitiga
+
+start
+:Input nilai alas;
+note right: Input nilai alas dapat berupa\nbilangan desimal.
+:Input nilai tinggi;
+note right: Input nilai tinggi dapat berupa\nbilangan desimal.
+if (Nilai alas > 0 dan tinggi > 0?) then (ya)
+  :Hitung luas = 1/2 * alas * tinggi;
+  :Output hasil luas;
+  note right: Hasil luas juga dapat berupa\nbilangan desimal.
+else (tidak)
+  :Error, nilai tidak valid;
+endif
+stop
+
+@enduml
