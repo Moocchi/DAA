@@ -3,21 +3,22 @@ left to right direction
 
 actor User as user 
 
-package Restoran{
-    actor servnt as serv
-    actor Chief as chief
-}
-
-package Restoran{
+package Restoran {
+    actor "Pelayan" as serv
+    actor "Koki" as chief
+    
     usecase "Pesan Menu" as U1
     usecase "Bayar Pesanan" as U2
     usecase "Melaporkan Pesanan" as U3
     usecase "Memasak Pesanan" as U4
 }
 
-user  --> U1
-user  --> U2
-serv  --> U3
-chief --> U4
+user --> U1 : "Memesan Menu"
+U1  --> U2 : "Bayar Pesanan"
+U2  --> serv : "Pelayan Memproses Pembayaran"
+serv --> U3 : "Melaporkan Pesanan"
+U3  --> chief : "Menyampaikan ke Koki"
+chief --> U4 : "Koki Memasak Pesanan"
+U4  --> user : "Pesanan Siap"
 
 @enduml
