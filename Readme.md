@@ -9,5 +9,3 @@
 ![Link to GIF](https://github.com/Moocchi/Struktur_data/blob/main/%20Gif%20and%20Image/Firefly.gif)
 
 </div>
-
-sda
