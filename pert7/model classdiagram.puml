@@ -1,0 +1,26 @@
+@startuml ClassDiagram
+
+class Mahasiswa{
+    - id 
+    - namespace
+    - function()
+}
+
+class Matakuliah{
+    - id 
+    - name
+    - test()
+}
+
+class testing{
+    +fillable
+    -fillable
+    -function()
+    -name()
+}
+
+Mahasiswa "0..1" - "*..*" Matakuliah
+(Mahasiswa, testing) . Matakuliah
+
+
+@enduml
