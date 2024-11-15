@@ -1,50 +1,28 @@
-@startuml
+@startuml flowchart
 start
-:Registrasi Admin;
-:Admin melakukan registrasi dan mendapatkan akses sistem dengan hak khusus;
 
-->
-
-:Registrasi Nasabah;
-:Nasabah mengajukan registrasi;
-:Admin menerima notifikasi dan memverifikasi data nasabah;
-
-if (Disetujui?) then (ya)
-  :Nasabah dapat mengajukan pinjaman;
-else (tidak)
-  :Nasabah menerima notifikasi penolakan;
+:Login Admin;
+if (Kelola Gudang?) then (Ya)
+  :Tambah Gudang;
+  :Perbarui Informasi Gudang;
+  :Hapus Gudang;
+else
+  if (Kelola Barang?) then (Ya)
+    :Tambah Barang;
+    :Perbarui Barang;
+    :Hapus Barang;
+  else
+    if (Pantau Barang?) then (Ya)
+      :Pindai Barcode;
+      :Cari Secara Manual;
+    else
+      if (Buat Laporan?) then (Ya)
+        :Laporan Stok Barang;
+        :Kebutuhan Restocking;
+      endif
+    endif
+  endif
 endif
-
-->
-
-:Pengajuan Pinjaman;
-:Nasabah terdaftar mengajukan permohonan pinjaman;
-:Admin memeriksa kelayakan dan memverifikasi data;
-
-if (Pinjaman Disetujui?) then (ya)
-  :Proses pencairan pinjaman;
-  :Nasabah menerima notifikasi pencairan;
-else (tidak)
-  :Nasabah menerima notifikasi penolakan;
-endif
-
-->
-
-:Pembayaran Cicilan;
-:Nasabah melakukan pembayaran cicilan sesuai jadwal;
-:Sistem mencatat pembayaran dan memperbarui saldo pinjaman;
-
-if (Terlambat?) then (ya)
-  :Sistem menghitung denda;
-  :Nasabah menerima informasi denda;
-endif
-
-->
-
-:Pelunasan Pinjaman;
-:Nasabah melunasi pinjaman secara penuh;
-:Admin memverifikasi pelunasan dan menutup status pinjaman;
-:Nasabah menerima konfirmasi pelunasan;
 
 stop
 @enduml

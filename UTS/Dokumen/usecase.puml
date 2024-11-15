@@ -1,0 +1,16 @@
+@startuml usecase
+
+actor Admin
+
+rectangle "Sistem Manajemen Gudang" {
+  usecase "Kelola Gudang" as UC1
+  usecase "Kelola Barang" as UC2
+  usecase "Pantau Barang" as UC3
+  usecase "Buat Laporan" as UC4
+}
+
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC4
+@enduml
