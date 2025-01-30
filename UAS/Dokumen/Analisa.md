@@ -1,6 +1,3 @@
-
-bisakah kau lanjutkan analiasis ini agar sesuai dengan gambar yang saya berikan
-
 # **Analisis Sistem Manajemen Atlet Billiard Berbasis Laravel, Docker, dan MySQL**
 
 ## **1. Latar Belakang**
