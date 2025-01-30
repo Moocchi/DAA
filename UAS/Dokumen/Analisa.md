@@ -1,8 +1,11 @@
-# **Analisis Sistem Manajemen Atlet Voli Berbasis Laravel, Docker, dan MySQL**
+
+bisakah kau lanjutkan analiasis ini agar sesuai dengan gambar yang saya berikan
+
+# **Analisis Sistem Manajemen Atlet Billiard Berbasis Laravel, Docker, dan MySQL**
 
 ## **1. Latar Belakang**
 
-Olahraga bola voli merupakan salah satu cabang olahraga yang berkembang pesat di Indonesia. Keberhasilan tim voli nasional dalam berbagai kompetisi menunjukkan bahwa Indonesia memiliki potensi besar dalam bidang	 ini. Namun, untuk mempertahankan dan meningkatkan prestasi, diperlukan regenerasi atlet yang berkelanjutan.
+Olahraga billiard merupakan salah satu cabang olahraga yang semakin populer di Indonesia. Prestasi atlet billiard nasional dalam berbagai kompetisi menunjukkan bahwa Indonesia memiliki potensi besar dalam bidang ini. Namun, untuk mempertahankan dan meningkatkan prestasi, diperlukan regenerasi atlet yang berkelanjutan.
 
 Pemerintah telah mengeluarkan kebijakan baru yang menekankan pentingnya pencarian bibit muda berbakat untuk regenerasi atlet. Hal ini bertujuan untuk memastikan bahwa atlet yang berkompetisi di tingkat nasional dan internasional memiliki kualitas yang unggul dan siap bersaing.
 
@@ -12,7 +15,7 @@ Sebagai perusahaan yang bergerak di bidang pelatihan olahraga, peran dalam menem
 
 Berdasarkan latar belakang yang telah dijelaskan, beberapa permasalahan utama yang diidentifikasi dalam studi ini adalah:
 
-1. Kurangnya sistem terstruktur dalam pencarian dan pembinaan bibit muda atlet voli.
+1. Kurangnya sistem terstruktur dalam pencarian dan pembinaan bibit muda atlet billiard.
 2. Belum adanya sistem yang dapat mengelompokkan atlet berdasarkan performa dan kesiapan bertanding.
 3. Kurangnya pemanfaatan teknologi dalam pemantauan dan evaluasi atlet secara real-time.
 4. Belum adanya sistem manajemen waktu yang optimal dalam pengaturan jadwal latihan dan pertandingan.
@@ -22,9 +25,9 @@ Berdasarkan latar belakang yang telah dijelaskan, beberapa permasalahan utama ya
 
 Berdasarkan identifikasi masalah di atas, rumusan masalah dalam penelitian ini adalah:
 
-1. Bagaimana membangun sistem company profile yang dapat memberikan informasi lengkap mengenai perusahaan pelatihan atlet voli?
+1. Bagaimana membangun sistem company profile yang dapat memberikan informasi lengkap mengenai perusahaan pelatihan atlet billiard?
 2. Bagaimana merancang dashboard kontrol yang dapat membantu dalam manajemen pelatihan dan evaluasi atlet?
-3. Bagaimana menentukan porsi latihan yang efektif untuk meningkatkan performa atlet voli?
+3. Bagaimana menentukan porsi latihan yang efektif untuk meningkatkan performa atlet billiard?
 4. Bagaimana mengelola data personal atlet secara sistematis untuk mendukung pengambilan keputusan dalam pelatihan?
 5. Bagaimana melakukan klasifikasi atlet berdasarkan performa dan kesiapan bertanding?
 6. Bagaimana menyusun klasemen atlet yang hanya memungkinkan atlet dengan porsi latihan yang telah selesai untuk bertanding?
@@ -34,7 +37,7 @@ Berdasarkan identifikasi masalah di atas, rumusan masalah dalam penelitian ini a
 
 Tujuan dari penelitian ini adalah:
 
-1. Membuat company profile yang dapat memberikan gambaran lengkap mengenai perusahaan pelatihan atlet voli.
+1. Membuat company profile yang dapat memberikan gambaran lengkap mengenai perusahaan pelatihan atlet billiard.
 2. Merancang dashboard kontrol untuk mempermudah pemantauan dan pengelolaan data atlet.
 3. Menentukan porsi latihan yang optimal untuk meningkatkan performa atlet.
 4. Mengembangkan sistem pengelolaan data personal atlet yang terstruktur dan mudah diakses.
@@ -44,46 +47,49 @@ Tujuan dari penelitian ini adalah:
 
 ## **5. Metode Analisis**
 
-Untuk menganalisis sistem ini, digunakan beberapa metode berikut:
+Untuk menganalisis sistem ini, digunakan metode **5W1H** (What, Why, Who, When, Where, How):
 
-### **5.1. SWOT Analysis**
+### **5.1. What (Apa)**
 
-- **Strengths (Kekuatan):**
+- **Apa yang ingin dicapai?**
+  - Membangun sistem manajemen atlet billiard berbasis teknologi untuk meningkatkan efektivitas pelatihan dan evaluasi atlet.
+- **Apa masalah yang dihadapi?**
+  - Kurangnya sistem terstruktur dalam pembinaan atlet, manajemen waktu, dan evaluasi performa.
 
-  - Sistem pelatihan berbasis data.
-  - Pelatih profesional dan fasilitas memadai.
-  - Kebijakan pemerintah mendukung regenerasi atlet.
-- **Weaknesses (Kelemahan):**
+### **5.2. Why (Mengapa)**
 
-  - Keterbatasan anggaran dalam pengembangan teknologi.
-  - Kurangnya sistem evaluasi performa berbasis real-time.
-- **Opportunities (Peluang):**
+- **Mengapa sistem ini diperlukan?**
+  - Untuk meningkatkan kualitas atlet billiard melalui sistem pelatihan dan evaluasi yang terstruktur dan berbasis data.
+- **Mengapa menggunakan teknologi Laravel, Docker, dan MySQL?**
+  - Laravel untuk pengembangan aplikasi yang cepat dan efisien, Docker untuk manajemen lingkungan pengembangan yang konsisten, dan MySQL untuk penyimpanan data yang terstruktur.
 
-  - Dukungan dari sponsor dan pemerintah.
-  - Meningkatnya popularitas voli di Indonesia.
-- **Threats (Ancaman):**
+### **5.3. Who (Siapa)**
 
-  - Persaingan dengan akademi olahraga lain.
-  - Risiko cedera atlet yang dapat menghambat perkembangan.
+- **Siapa yang terlibat dalam sistem ini?**
+  - Atlet, pelatih, manajer, dan administrator sistem.
+- **Siapa yang akan menggunakan sistem ini?**
+  - Pelatih dan manajer untuk memantau dan mengelola atlet, serta atlet untuk melihat perkembangan mereka.
 
-### **5.2. Business Model Canvas (BMC)**
+### **5.4. When (Kapan)**
 
-- **Key Partners:** Pemerintah, sponsor, sekolah, klub voli.
-- **Key Activities:** Rekrutmen atlet, pelatihan, evaluasi performa, turnamen.
-- **Value Proposition:** Menciptakan atlet voli unggulan.
-- **Customer Segments:** Atlet muda berbakat, klub voli, sponsor.
-- **Channels:** Website, media sosial, aplikasi monitoring atlet.
-- **Revenue Streams:** Sponsorship, dana pemerintah, biaya akademi.
-- **Cost Structure:** Biaya pelatihan, fasilitas, gaji pelatih.
+- **Kapan sistem ini akan diimplementasikan?**
+  - Setelah tahap pengembangan dan pengujian selesai, sistem akan diimplementasikan dalam waktu 6 bulan.
+- **Kapan evaluasi performa atlet dilakukan?**
+  - Evaluasi dilakukan secara berkala setiap bulan dan setelah setiap pertandingan.
 
-### **5.3. Analisis GAP**
+### **5.5. Where (Di mana)**
 
-- **Kondisi Saat Ini:**
-  - Sistem pelatihan masih manual.
-  - Tidak ada sistem klasemen berbasis performa.
-- **Target yang Diharapkan:**
-  - Sistem berbasis data dengan dashboard evaluasi atlet.
-  - Sistem klasifikasi dan manajemen waktu pertandingan.
+- **Di mana sistem ini akan digunakan?**
+  - Sistem akan digunakan di pusat pelatihan atlet billiard dan dapat diakses secara online melalui web dashboard.
+- **Di mana data disimpan?**
+  - Data disimpan dalam database MySQL yang dihosting pada server lokal atau cloud.
+
+### **5.6. How (Bagaimana)**
+
+- **Bagaimana sistem ini akan dibangun?**
+  - Menggunakan framework Laravel untuk backend dan frontend, Docker untuk containerisasi, dan MySQL untuk database.
+- **Bagaimana cara kerja sistem ini?**
+  - Atlet mendaftar, data mereka disimpan, pelatih mengevaluasi performa, dan sistem mengklasifikasikan atlet berdasarkan performa mereka.
 
 ## **6. Perancangan Sistem**
 
@@ -131,12 +137,14 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: atlet_voli
+      MYSQL_DATABASE: atlet_billiard
       MYSQL_USER: user
       MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
 ```
+
+---
 
 ## **8. Implementasi Fitur Berdasarkan Studi Kasus**
 
@@ -179,8 +187,6 @@ services:
 
 - Menggunakan **Laravel** untuk backend dan **Chart.js** untuk visualisasi data.
 - Dashboard diakses oleh admin, pelatih, dan manajer.
-
----
 
 ### **8.3. Porsi Latihan untuk Atlet**
 
