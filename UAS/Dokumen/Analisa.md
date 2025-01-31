@@ -231,7 +231,8 @@ stop
 
 **Output:**
 
-flowchart
+![Flowchart](https://github.com/Moocchi/DAA/blob/main/UAS/Gambar/flowchart.png)
+
 
 # 10.Use Case untuk Sistem Remaja Masjid
 
@@ -289,4 +290,4 @@ end note
 
 **Output** :
 
-contoh usecase
+![Flowchart](https://github.com/Moocchi/DAA/blob/main/UAS/Gambar/usecase.png)
