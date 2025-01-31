@@ -184,6 +184,16 @@ services:
       FOREIGN KEY (ID_Kegiatan) REFERENCES Kegiatan(ID_Kegiatan)
   );
   ```
+- **Keuangan :**
+
+  ```sql
+  CREATE TABLE Keuangan (
+      ID_Keuangan INT PRIMARY KEY AUTO_INCREMENT,
+      Sumber VARCHAR(50) NOT NULL,
+      Jumlah DECIMAL(10, 2) NOT NULL,
+      Keterangan TEXT
+  );
+  ```
 
 ---
 
@@ -232,7 +242,6 @@ stop
 **Output:**
 
 ![Flowchart](https://github.com/Moocchi/DAA/blob/main/UAS/Gambar/flowchart.png)
-
 
 # 10.Use Case untuk Sistem Remaja Masjid
 
